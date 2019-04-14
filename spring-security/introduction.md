@@ -22,9 +22,8 @@
 
 웹 사이트 관리자가 보안 자원에 접근하려고 할 때, 접근 가능 여부를 판단하는 로직은 실제 사용자 권한(User Authorities)과 필요 권한(Required Authorities)에 대한 두 집합으로 간단하게 표현할 수 있다.  
 
-![authorities1](https://user-images.githubusercontent.com/26949964/56086384-39881800-5e91-11e9-9a55-5f764f365839.png)
-위 그림을 보면 'All Events'라는 페이지에 대한 사용자 권한과, 페이지에 접근하기 위한 필요 권한의 교집합이 존재한다. 즉 사용자는 페이지에 접근하기 위한 필요 권한을 갖고 있다는 의미이며 해당 페이지에 접근할 수 있다.
+![authorities1](https://user-images.githubusercontent.com/26949964/56086384-39881800-5e91-11e9-9a55-5f764f365839.png)  
+위 그림을 보면 'All Events'라는 페이지에 대한 사용자 권한과, 페이지에 접근하기 위한 필요 권한의 교집합이 존재한다. 즉 사용자는 페이지에 접근하기 위한 필요 권한을 갖고 있다는 의미이며 해당 페이지에 접근할 수 있다.
 
-![authorities2](https://user-images.githubusercontent.com/26949964/56086424-08f4ae00-5e92-11e9-83e7-fbe704d5b65e.png)
+![authorities2](https://user-images.githubusercontent.com/26949964/56086424-08f4ae00-5e92-11e9-83e7-fbe704d5b65e.png)  
 반면 위 그림은 집합에서 교집합이 존재하지 않는다. 즉 '방문자 권한'을 가진 사용자는 'All Events' 페이지에 접근 권한이 없으므로 접근이 불가능하다. 
-
