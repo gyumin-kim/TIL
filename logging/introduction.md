@@ -11,7 +11,7 @@
 즉 다른 logging 프레임웤을 사용하고 싶다면 다른 Slf4J의 구현체로 변경하기만 하면 되고, 소스코드 상에서는 변화가 필요 없다.
 
 ## Log Level
-- 대표적인 로그 레벨은 TRACE, DEBUG, INFO, WARN, ERROR가 있다(레벨이 낮은 것부터).
+- 대표적인 로그 레벨은 `TRACE, DEBUG, INFO, WARN, ERROR`가 있다(레벨이 낮은 것부터).
 - 로그 레벨이 높을 수록 출력되는 메시지는 적어지고, 레벨이 낮을 수록 더 많은 로깅 레벨이 출력된다.
   - ex) WARN 로그 레벨로 설정하면 WARN, ERROR 레벨의 메시지만 출력
   - ex) DEBUG 로그 레벨로 설정하면 DEBUG, INFO, WARN, ERROR 레벨의 메시지만 출력
