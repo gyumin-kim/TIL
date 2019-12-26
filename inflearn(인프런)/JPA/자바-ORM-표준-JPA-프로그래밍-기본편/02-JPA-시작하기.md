@@ -1,4 +1,4 @@
-# 02 JPA 시작하기
+# JPA 시작하기
 
 ## persistence.xml
 - JPA 설정 정보
