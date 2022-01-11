@@ -16,4 +16,9 @@
 - configuration value가 변경될 때, 변경된 값을 각 서비스에 적용하기 위한 방법은 아래와 같다.
     - 각 서비스 재기동
     - Spring Actuator 'refresh' 옵션
+        1. 서비스(client) 설정 파일에 아래 옵션들을 추가한다.
+            - `management.endpoints.web.exposure.include=refresh, health, beans`
+        2. config server가 관리하는 configuration 파일의 value를 변경하고 commit한다.
+        3. 해당 서비스에 `/actuator/refresh`(POST)를 호출한다.
+        4. 서비스를 재기동하지 않아도 변경된 설정값을 받아서 사용 가능한 것을 확인할 수 있다.
     - Spring Cloud Bus 사용
