@@ -20,3 +20,10 @@
 - domain layer는 low level의 기술에 상관 없이 독립적으로 존재할 수 있어야 한다.
     - 이를 위해 대부분의 주요 로직은 추상화되고, runtime에는 DIP 개념을 활용하여 실제 구현체가 동작하게 한다.
     ![image](https://user-images.githubusercontent.com/26949964/152808468-d97b5986-bb2b-4f51-a0d7-89ebd72791b0.png)
+
+## Domain Layer
+- 높은 추상화 수준을 지속적으로 유지하는 것이 매우 중요하다.
+- entity
+- service
+- 그 외 infrastructure layer와 통신하기 위한 interface들
+- 다른 layer로부터 데이터를 받거나 다른 layer로 데이터를 넘기기 위한 그릇
