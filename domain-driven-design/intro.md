@@ -27,3 +27,13 @@
 - service
 - 그 외 infrastructure layer와 통신하기 위한 interface들
 - 다른 layer로부터 데이터를 받거나 다른 layer로 데이터를 넘기기 위한 그릇
+
+## Infrastructure Layer
+- 상위 계층을 지원하는 일반화된 기술적 기능을 제공한다.
+- domain layer에 선언되고 사용되는 추상화된 interface를 실제로 구현하여 runtime에는 실제 로직이 동작하게 한다.
+    - infrastructure layer의 구현체를 변경하더라도 domain layer로 그 변경이 전파되지 않도록 한다.
+
+## Application Layer
+- domain 객체가 문제를 해결하도록 지시한다.
+- 비즈니스 규칙은 포함하지 않으며, 작업을 조정하고, 다음 하위 계층에서 domain 객체의 협력을 위해 업무를 위임한다.
+- 작업을 조정하기만 하고 domain 상태를 가지면 안된다.
