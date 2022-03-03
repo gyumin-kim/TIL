@@ -39,3 +39,4 @@
                 { status: "reject" }    // delete filter
             )
         ```
+- MongoDB에서 write operation(create, update, delete)은, 1개의 document level에서 [atomic](https://docs.mongodb.com/v4.4/reference/glossary/#std-term-atomic-operation)하다(원자적이다).
